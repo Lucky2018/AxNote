@@ -454,14 +454,179 @@ meta标签是不显示的，主要给搜索引擎看
 </html>
 ```
 
+外部引用
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>外部的CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>我使用了外部样式文件来格式化文本 </h1>
+    <p>我也是!</p>
+</body>
+
+</html>
+```
+
 ```html
 CSS 可以通过以下方式添加到HTML中:
 
-内联样式- 在HTML元素中使用"style" 属性
-内部样式表 -在HTML文档头部 <head> 区域使用<style> 元素 来包含CSS
+内联样式 - 在HTML元素中使用"style" 属性
+内部样式表 - 在HTML文档头部 <head> 区域使用<style> 元素 来包含CSS
 外部引用 - 使用外部 CSS 文件
+```
+
+最好的方式是通过外部引用CSS文件。
+
+
+
+## 22.插入图像
+
+参考代码
+
+```html
+<p>一个来自文件夹中的图像:</p>
+<img src="/images/chrome.gif" alt="Google Chrome" width="33" height="32">
+<p>一个来自菜鸟教程的图像:</p>
+<img src="//www.runoob.com/images/logo.png" alt="runoob.com" width="336" height="69">
+
+在 HTML 中，图像由<img> 标签定义。
+<img> 是空标签，意思是说，它只包含属性，并且没有闭合标签。
+
+alt 属性用来为图像定义一串预备的可替换的文本。
+
+替换文本属性的值是用户定义的。
+
+<img src="boat.gif" alt="Big Boat">
+在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的。
+
+
+图像映射，一个图片的多个区域可以点击，跳转到不同的链接
+<p>点击太阳或其他行星，注意变化：</p>
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
 ```
 
 
 
-https://www.runoob.com/html/html-css.html
+## 23.表格
+
+```html
+<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+</table>
+```
+
+tr 表示表格的行
+
+td 表示表格数据
+
+th 表示表格的头
+
+跨行跨列等等。。。
+
+
+
+## 24.列表
+
+```html
+无序列表使用 <ul> 标签
+
+<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+    
+
+有序列表也是一列项目，列表项目使用数字进行标记。 
+有序列表始于 <ol> 标签。每个列表项始于 <li> 标签。
+
+列表项使用数字来标记。
+
+<ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+```
+
+自定义列表略，列表编号使用圆圈、圆点、方形、数字、大小写字母、罗马数字等略。
+
+
+
+## 25.区块
+
+就是div和span的使用
+
+都是没有明确含义的，只是为了方便处理。
+
+
+
+## 26.表单
+
+文本域、密码字段、单选按钮、复选框、提交按钮
+
+```html
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+
+<form>
+Password: <input type="password" name="pwd">
+</form>
+
+<form>
+<input type="radio" name="sex" value="male">Male<br>
+<input type="radio" name="sex" value="female">Female
+</form>
+
+<form>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car 
+</form>
+
+<form name="input" action="html_form_action.php" method="get">
+Username: <input type="text" name="user">
+<input type="submit" value="Submit">
+</form>
+```
+
+
+
+2020年12月4日17:48:57
+
+笔记先做到这里
+
+代码到单选按钮
