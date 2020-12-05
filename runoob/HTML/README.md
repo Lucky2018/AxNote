@@ -623,10 +623,102 @@ Username: <input type="text" name="user">
 </form>
 ```
 
+下拉列表、下拉列表默认值、文本域、创建按钮
+
+```html
+<form action="">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>
+
+<form action="">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>
+
+<textarea rows="10" cols="50">我是一个文本框。</textarea>
+
+<form action="">
+    <input type="button" value="确认">
+    <input type="button" value="退出">
+</form>
+```
+
+带有边框的表单
+
+```html
+<form action="">
+    <fieldset>
+        <legend>个人信息:</legend>
+        名字: <input type="text" size="30"><br>
+        邮箱: <input type="text" size="30"><br>
+        生日: <input type="text" size="10">
+    </fieldset>
+</form>
+```
+
+表单的提交
+
+```html
+<form action="demo-form.php">
+    名: <input type="text" name="FirstName" value="云长"><br>
+    姓: <input type="text" name="LastName" value="关"><br>
+    <input type="submit" value="提交">
+</form>
+
+<p>点击"提交"按钮，表单数据将被发送到服务器上的“demo-form.php”。</p>
+```
+
+复选框表单提交
+
+```html
+<form action="demo-form.php" method="get">
+    <input type="checkbox" name="vehicle[]" value="Bike">自行车
+    <br>
+    <input type="checkbox" name="vehicle[]" value="Car" checked="checked">汽车
+    <br>
+    <input type="submit" value="提交">
+</form>
+```
 
 
-2020年12月4日17:48:57
 
-笔记先做到这里
+## 27.iframe框架
 
-代码到单选按钮
+就是iframe 在一个网页里面显示另一个网页
+
+```html
+<iframe src="URL"></iframe>
+```
+
+比如
+
+```html
+<iframe src="https://www.baidu.com/" width="800" height="600"></iframe>
+<iframe src="demo_iframe.htm" width="200" height="200"></iframe>
+
+不显示边框
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>
+```
+
+
+
+## 28.颜色
+
+略
+
+
+
+## 29.脚本
+
+
+
+https://www.runoob.com/html/html-scripts.html

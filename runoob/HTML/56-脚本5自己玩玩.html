@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript改变样式</title>
+</head>
+
+<body>
+    <h1>自己玩一玩，点击按钮文字变色</h1>
+    <p id="demo">
+        JavaScript 能改变 HTML 元素的样式。所谓样式，不过颜色形状大小而已。（我瞎说的）。
+    </p>
+    <script>
+        function becomeRed() {
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#ff0000";          // 改变样式
+        }
+        function becomeGreen() {
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#00ff00";          // 改变样式
+        }
+        function becomeBlue() {
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#0000ff";          // 改变样式
+        }
+        function becomeBlack() {
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#000000";          // 改变样式
+        }
+        function becomeWhite() {
+            x = document.getElementById("demo") // 找到元素
+            x.style.color = "#ffffff";          // 改变样式
+        }
+    </script>
+    <button type="button" onclick="becomeRed()">变成红色</button>
+    <button type="button" onclick="becomeGreen()">变成绿色</button>
+    <button type="button" onclick="becomeBlue()">变成蓝色</button>
+    <button type="button" onclick="becomeBlack()">变成黑色（还原）</button>
+    <button type="button" onclick="becomeWhite()">变成白色（隐形）</button>
+</body>
+
+</html>
