@@ -12,9 +12,9 @@ class Bird(object):
         """定义初始化方法"""
         self.birdRect = pygame.Rect(65, 50, 50, 50)  # 鸟的矩形
         # 定义鸟的3种状态列表
-        self.birdStatus = [pygame.image.load("assets/1.png"),
-                           pygame.image.load("assets/2.png"),
-                           pygame.image.load("assets/dead.png")]
+        self.birdStatus = [pygame.image.load("image/1.png"),
+                           pygame.image.load("image/2.png"),
+                           pygame.image.load("image/dead.png")]
         self.status = 0      # 默认飞行状态
         self.birdX = 120     # 鸟所在X轴坐标,即是向右飞行的速度
         self.birdY = 350     # 鸟所在Y轴坐标,即上下飞行高度

@@ -45,6 +45,6 @@ if __name__ == '__main__':
             if event.type == pygame.QUIT:   # 如果检测到事件是关闭窗口
                 sys.exit()
 
-        background = pygame.image.load("assets/background.png")  # 加载背景图片
+        background = pygame.image.load("image/background.png")  # 加载背景图片
         createMap()
     pygame.quit()  # 退出

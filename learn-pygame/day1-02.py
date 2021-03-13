@@ -7,7 +7,7 @@ pygame.init()  # 初始化pygame
 size = width, height = 800, 600  # 设置窗口大小
 screen = pygame.display.set_mode(size)  # 显示窗口
 color = (20, 20, 20)  # 设置颜色
-ball = pygame.image.load('ball.png')  # 加载图片
+ball = pygame.image.load('image/ball.png')  # 加载图片
 ballrect = ball.get_rect()  # 获取矩形区域
 
 while True:  # 死循环确保窗口一直显示
