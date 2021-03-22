@@ -1,0 +1,21 @@
+* {
+   margin-top: 10px;
+   border-collapse: collapse;
+}
+
+body table tr td {
+   border: 2px solid black;
+}
+
+body table tr td input {
+   width: 200px;
+   height: 200px;
+   margin-top: 0;
+   font-size: 130px;
+   border: none;
+   outline: none;
+}
+
+body table tr td input:hover {
+   background-color: white;
+}
