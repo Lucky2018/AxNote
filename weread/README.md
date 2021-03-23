@@ -10,12 +10,24 @@
 
 （ P 表示 programing ，指编程相关的书籍；序号仅为记录时间，实际排名不分先后 ）
 
+
+
 P01 编写高质量代码：改善Python程序的91个建议 - 张颖 赖勇浩
 
-https://weread.qq.com/web/reader/b4832100597d8eb481b4cd6
+https://weread.qq.com/web/reader/b4832100597d8eb481b4cd6kc81322c012c81e728d9d180
 
 
 
 P02 编写高质量代码——改善Java程序的151个建议 - 秦小波
 
-https://weread.qq.com/web/reader/3cc32750597de83cc5abc31
+https://weread.qq.com/web/reader/3cc32750597de83cc5abc31kc81322c012c81e728d9d180
+
+
+
+## 人工智能
+
+（ A 表示 AI ，指人工智能相关书籍；序号只是记录的时间，排名不分先后）
+
+A01 人工智能不会做什么：100亿人类与100亿机器人共存的未来 - 羽生善治
+
+https://weread.qq.com/web/reader/dd132b707168d12ddd12324kc81322c012c81e728d9d180
