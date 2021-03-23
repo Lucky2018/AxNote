@@ -9,7 +9,7 @@
 
 <body>
    <h1 align=center> 井字棋 Tic-Tac-Toe </h1>
-   <table border=6px width="450" height="450" align=center>
+   <table border=5px width="420" height="420" align=center>
       <tr>
          <td><input type="button" id="1"  onclick="putHere(0,0)" /></td>
          <td><input type="button" id="2"  onclick="putHere(0,1)" /></td>
@@ -27,8 +27,8 @@
       </tr>
    </table>
    <div align=center>
-      <input type="button" value="重来(restart)" style="font-size:30px" onclick="location.reload()" />
-      <input type="button" value="认输(give up)" style="font-size:30px;margin-left: 50px;"
+      <input type="button" class="blue button" value="重来(restart)" onclick="location.reload()" />
+      <input type="button" class="blue button" value="认输(give up)" style="margin-left: 50px;"
          onclick="printMsg('你 认 负 了！You give up !')" />
    </div>
    <p id="output" align=center>对局进行中......(Playing...)</p>

@@ -16,6 +16,41 @@ body table tr td input {
    outline: none;
 }
 
+div input{
+   font-size: 28px;
+   border-radius:7px;
+}
+
 body table tr td input:hover {
    background-color: white;
 }
+
+
+.button.blue{
+   color: #fff;
+   text-shadow: 0 1px 0 rgba(0,0,0,.2);
+   
+   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+   background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+   background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+   background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+   background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+   background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+   
+   background-color: #269CE9;
+   border-color: #269CE9;
+ }
+ 
+ .button.blue:hover{
+   background-color: #70B9E8;
+ }
+ 
+ .button.blue:active{
+   background: #269CE9;
+ }
+.blue[disabled], .blue[disabled]:hover, .blue[disabled]:active{
+   border-color: #269CE9;
+   background: #269CE9;
+   color: #93D5FF;
+ }
+
